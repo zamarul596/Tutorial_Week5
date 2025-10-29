@@ -7,11 +7,10 @@ POP_SIZE = 500
 MUT_RATE = 0.2
 
 #TARGET: Our goal.
-TARGET = 'ayuni'
+TARGET = 'fakhitah'
 
 #GENES: Options from which our population would be created.
 GENES = ' abcdefghijklmnopqrstuvwxyz'
-
 
 #initialization
 
@@ -25,7 +24,8 @@ def initialize_pop(TARGET):
           temp.append(random.choice(GENES))
       population.append(temp)
 
-  #fitness calculation
+  return population
+#fitness calculation
 #0 fitness means target found
 
 def fitness_cal(TARGET, chromo_from_pop):
@@ -35,14 +35,14 @@ def fitness_cal(TARGET, chromo_from_pop):
           difference+=1
   return [chromo_from_pop, difference]
 
-  #selection
+#selection
 #returns top 50% population sorted according to fitness
 
 def selection(population, TARGET):
   sorted_chromo_pop = sorted(population, key= lambda x: x[1])
   return sorted_chromo_pop[:int(0.5*POP_SIZE)]
 
-  #crossover
+#crossover
 
 def crossover(selected_chromo, CHROMO_LEN, population):
   offspring_cross = []
@@ -58,7 +58,7 @@ def crossover(selected_chromo, CHROMO_LEN, population):
     offspring_cross.extend([child])
   return offspring_cross
 
-  #mutation
+#mutation
 
 def mutate(offspring, MUT_RATE):
   mutated_offspring = []
@@ -70,6 +70,7 @@ def mutate(offspring, MUT_RATE):
       mutated_offspring.append(arr)
   return mutated_offspring
 
+
 #replacement
 
 def replace(new_gen, population):
@@ -79,7 +80,7 @@ def replace(new_gen, population):
         population[_][1] = new_gen[_][1]
   return population
 
-  #main
+#main
 
 def main(POP_SIZE, MUT_RATE, TARGET, GENES):
     # 1) initialize population
@@ -123,8 +124,7 @@ def main(POP_SIZE, MUT_RATE, TARGET, GENES):
       print('String: ' + str(population[0][0]) + ' Generation: ' + str(generation) + ' Fitness: ' + str(population[0][1]))
       generation+=1
 
-result= main(POP_SIZE, MUT_RATE, TARGET, GENES)
-st.write(result)
-  
 
-  return population
+
+result = main(POP_SIZE, MUT_RATE, TARGET, GENES)
+st.write(result)
