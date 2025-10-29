@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Add a banner image at the top
-banner_image =  'https://www.google.com/imgres?q=forest&imgurl=https%3A%2F%2Fwww.bcfii.ca%2Fwp-content%2Fuploads%2F2021%2F01%2Fbc-forest-logging-truck-H0A4076-scaled-e1612482883787.jpg&imgrefurl=https%3A%2F%2Fwww.bcfii.ca%2Fbc-forests%2F&docid=sXG4-ACbF78frM&tbnid=7vXGJ0vO7xuNBM&vet=12ahUKEwjh3dinkcmQAxUoumMGHVEjCnw4KBAzegQIHhAA..i&w=1599&h=1003&hcb=2&ved=2ahUKEwjh3dinkcmQAxUoumMGHVEjCnw4KBAzegQIHhAA'
+banner_image = 'https://raw.githubusercontent.com/fakhitah3/FHPK-TVET/main/3u1i.jpeg'
 st.image(banner_image, use_container_width =True)
 
 #video_url = 'https://raw.githubusercontent.com/fakhitah3/FHPK-TVET/main/Video.mp4' 
