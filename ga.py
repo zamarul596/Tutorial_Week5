@@ -7,7 +7,7 @@ POP_SIZE = 500
 MUT_RATE = 0.2
 
 #TARGET: Our goal.
-TARGET = 'fakhitah'
+TARGET = 'ayuni'
 
 #GENES: Options from which our population would be created.
 GENES = ' abcdefghijklmnopqrstuvwxyz'
@@ -123,8 +123,7 @@ def main(POP_SIZE, MUT_RATE, TARGET, GENES):
       print('String: ' + str(population[0][0]) + ' Generation: ' + str(generation) + ' Fitness: ' + str(population[0][1]))
       generation+=1
 
-
-       st.result = main(POP_SIZE, MUT_RATE, TARGET, GENES)
+st.result= main(POP_SIZE, MUT_RATE, TARGET, GENES)
   
 
   return population
