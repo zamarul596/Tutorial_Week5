@@ -126,4 +126,4 @@ def main(POP_SIZE, MUT_RATE, TARGET, GENES):
 st.result= main(POP_SIZE, MUT_RATE, TARGET, GENES)
   
 
-  return population
+  #return population
