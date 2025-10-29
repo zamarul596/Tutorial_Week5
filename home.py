@@ -9,7 +9,7 @@ st.image(banner_image, use_container_width =True)
 #st.markdown(f'<iframe width="100%" height="400" src="{video_url}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>', unsafe_allow_html=True)
 
 
-# Add the main paragraph and explanation
+# Add the main paragraph and explanations
 st.write(
     """
     *Program Apprentice 3u1i@FHPK* merupakan sebuah program pengajian mod industri yang dijalankan dengan pelaksanaan struktur kurikulum yang merangkumi tiga tahun pengajian akademik di UMK dan satu tahun latihan industri yang disusun secara sistematik dalam tempoh pengajian di industri terpilih. Program pengajian mod industri yang dijalankan adalah menggunakan kaedah pembelajaran berasaskan kerja (WBL) dengan menggunapakai garis panduan pelaksanaan mod pengajian 2u2i. 
