@@ -13,7 +13,7 @@ TARGET = 'Ali'
 #GENES: Options from which our population would be created.
 GENES = ' abcdefghijklmnopqrstuvwxyz'
 
-#initialization
+#initializational
 
 def initialize_pop(TARGET):
   population = list()
