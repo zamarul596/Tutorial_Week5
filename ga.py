@@ -123,7 +123,8 @@ def main(POP_SIZE, MUT_RATE, TARGET, GENES):
       print('String: ' + str(population[0][0]) + ' Generation: ' + str(generation) + ' Fitness: ' + str(population[0][1]))
       generation+=1
 
-st.result= main(POP_SIZE, MUT_RATE, TARGET, GENES)
+result= main(POP_SIZE, MUT_RATE, TARGET, GENES)
+st.write(result)
   
 
-  #return population
+  return population
