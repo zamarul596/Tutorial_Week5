@@ -25,8 +25,6 @@ def initialize_pop(TARGET):
           temp.append(random.choice(GENES))
       population.append(temp)
 
-  return population
-
   #fitness calculation
 #0 fitness means target found
 
@@ -43,7 +41,6 @@ def fitness_cal(TARGET, chromo_from_pop):
 def selection(population, TARGET):
   sorted_chromo_pop = sorted(population, key= lambda x: x[1])
   return sorted_chromo_pop[:int(0.5*POP_SIZE)]
-
 
   #crossover
 
@@ -73,7 +70,7 @@ def mutate(offspring, MUT_RATE):
       mutated_offspring.append(arr)
   return mutated_offspring
 
-  #replacement
+#replacement
 
 def replace(new_gen, population):
   for _ in range(len(population)):
@@ -81,7 +78,6 @@ def replace(new_gen, population):
         population[_][0] = new_gen[_][0]
         population[_][1] = new_gen[_][1]
   return population
-
 
   #main
 
@@ -127,9 +123,8 @@ def main(POP_SIZE, MUT_RATE, TARGET, GENES):
       print('String: ' + str(population[0][0]) + ' Generation: ' + str(generation) + ' Fitness: ' + str(population[0][1]))
       generation+=1
 
-result = main(POP_SIZE, MUT_RATE, TARGET, GENES)
 
-
+       st.result = main(POP_SIZE, MUT_RATE, TARGET, GENES)
   
 
   return population
