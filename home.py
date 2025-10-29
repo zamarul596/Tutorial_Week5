@@ -1,7 +1,8 @@
 import streamlit as st
 
 # Add a banner image at the top
-banner_image = 'https://raw.githubusercontent.com/fakhitah3/FHPK-TVET/main/3u1i.jpeg'
+banner_image = 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fdark-forest&psig=AOvVaw3-yb6-AROj1Dbu743sAdSs&ust=1761817893488000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCKinmKiSyZADFQAAAAAdAAAAABAE'
+#banner_image = 'https://raw.githubusercontent.com/fakhitah3/FHPK-TVET/main/3u1i.jpeg'
 st.image(banner_image, use_container_width =True)
 
 #video_url = 'https://raw.githubusercontent.com/fakhitah3/FHPK-TVET/main/Video.mp4' 
